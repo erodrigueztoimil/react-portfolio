@@ -1,11 +1,23 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Navigation from "./components/Navigation";
-function App() {
+import About from "./components/About";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
+
+const App = () => {
   return (
-    <div>
+    <Router>
       <Navigation />
-    </div>
+
+      <Switch>
+        <Route exact path="/" component={About} />
+        <Route path="/work" component={Work} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
