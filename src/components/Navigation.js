@@ -12,6 +12,7 @@ import {
 class NavbarPage extends Component {
   state = {
     isOpen: false,
+    currentPage: "",
   };
 
   toggleCollapse = () => {
@@ -35,7 +36,7 @@ class NavbarPage extends Component {
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav right>
-            <MDBNavItem active>
+            <MDBNavItem>
               <MDBNavLink to="/">About</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
