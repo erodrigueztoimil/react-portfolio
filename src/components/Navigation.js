@@ -21,14 +21,17 @@ class NavbarPage extends Component {
   render() {
     return (
       <MDBNavbar
-        color="default-color"
+        color="elegant-color"
         dark
         expand="md"
         style={{ padding: "20px 10%" }}
       >
         <MDBNavbarBrand>
-          <strong className="white-text">Ernesto Rodriguez</strong>
+          <MDBNavLink to="/">
+            <strong className="white-text">Ernesto R.</strong>
+          </MDBNavLink>
         </MDBNavbarBrand>
+
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav right>

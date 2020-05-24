@@ -1,0 +1,254 @@
+@keyframes slideUp {
+  0% {
+    top: 80%;
+  }
+  100% {
+    top: 45%;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  margin: 15px 0 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.styled-button {
+  text-decoration: none;
+  color: #000;
+  background-color: #fed892;
+  padding: 12px 35px;
+  border-radius: 50px;
+}
+
+.styled-button:hover {
+  text-decoration: none;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 20px #cecece;
+  box-shadow: 0px 0px 20px #cecece;
+}
+
+#hero {
+  height: 88vh;
+  width: 100%;
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+#hero .hero-content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 10%;
+  position: absolute;
+  top: 52%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#hero .hero-content .content-image {
+  margin: auto;
+}
+
+#hero .hero-content .content-text .content-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#hero .hero-content .content-text .content-social a {
+  outline: none;
+}
+
+#hero .hero-content .content-text .content-social img {
+  width: 30px;
+}
+
+#hero .scroll-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#hero .scroll-icon img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#hero .scroll-icon p {
+  font-size: 12px;
+}
+
+#work {
+  padding: 120px 10%;
+}
+
+#work .content-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#work .content-text h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#work .content-text p {
+  width: 90%;
+  max-width: 450px;
+  margin: auto;
+}
+
+#work .content-text a {
+  margin-top: 20px;
+  outline: none;
+}
+
+#work .projects {
+  padding: 60px 0;
+}
+
+#work .projects .single-project {
+  width: 80%;
+  margin: 90px auto 0;
+}
+
+#work .projects .single-project .project-image {
+  -webkit-box-shadow: 0px 0px 20px #cecece;
+  box-shadow: 0px 0px 20px #cecece;
+}
+
+#work .projects .single-project .project-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#work .projects .single-project .project-desc {
+  padding-top: 25px;
+}
+
+#work .projects .single-project .project-desc .col-lg-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#contact {
+  background-color: #f8f8f8;
+  width: 100%;
+  position: relative;
+}
+
+#contact .contact-content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 100px 10%;
+}
+
+#contact .contact-content .content-image {
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact .contact-content .content-text {
+  text-align: center;
+}
+
+#contact .contact-content .content-text p {
+  width: 100%;
+  max-width: 570px;
+  margin: 15px auto 40px;
+}
+
+#contact .contact-content .content-text a {
+  outline: none;
+}
+
+footer h5 {
+  text-align: center;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 14px;
+  }
+  #hero .hero-content {
+    top: 55%;
+  }
+  #hero .hero-content .content-image {
+    max-width: 350px;
+  }
+  #hero .hero-content .content-text {
+    text-align: center;
+  }
+  #hero .hero-content .content-text .content-social {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #hero .hero-content .content-text .content-social img {
+    margin: 10px;
+  }
+  #hero .scroll-icon {
+    display: none;
+  }
+  #contact .content-text {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero .content-image {
+    max-width: 600px;
+  }
+  #hero .content-text .content-social img {
+    margin-right: 15px;
+  }
+  #contact {
+    height: 88vh;
+  }
+  #contact .contact-content {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
